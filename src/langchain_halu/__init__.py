@@ -1,6 +1,6 @@
-"""langchain-halu: a thin LangChain integration for Komplex AI hallucination detection.
+"""langchain-halu: a thin LangChain integration for Komplex AI — a hallucination detector for LLM output.
 
-This package adapts the ``halu`` SDK (the Komplex AI hallucination detector) to
+This package adapts the ``halu`` SDK (Komplex AI's hallucination detector) to
 LangChain, exposing three complementary patterns:
 
 * :func:`halu_annotate` -- a Runnable that enriches an answer with a verdict

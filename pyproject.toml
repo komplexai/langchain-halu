@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "langchain-halu"
 version = "0.1.0"
-description = "Thin LangChain integration for the Komplex AI hallucination detector (halu SDK)."
+description = "Thin LangChain integration for Komplex AI — a hallucination detector for LLM output (adapts the halu SDK to LCEL)."
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "Apache-2.0" }
