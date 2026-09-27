@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-halu"
+version = "0.1.0"
+description = "Thin LangChain integration for the Komplex AI hallucination detector (halu SDK)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [
+    { name = "Komplex AI", email = "support@komplexai.io" },
+]
+maintainers = [
+    { name = "Komplex AI", email = "support@komplexai.io" },
+]
+keywords = [
+    "langchain",
+    "hallucination",
+    "hallucination-detection",
+    "llm",
+    "uncertainty",
+    "komplexai",
+    "halu",
+    "guardrails",
+    "runnable",
+    "callback",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = [
+    "halu>=0.1.2",
+    "langchain-core>=0.3",
+]
+
+[project.urls]
+Homepage = "https://detector.komplexai.io"
+Documentation = "https://detector.komplexai.io/guide"
+Source = "https://github.com/komplexai"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+langchain_halu = ["py.typed"]
