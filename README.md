@@ -1,7 +1,7 @@
 # langchain-halu
 
 A thin [LangChain](https://python.langchain.com/) integration for
-[**Komplex AI**](https://detector.komplexai.io) — a hallucination detector for
+[**Komplex AI**](https://detector.komplexai.io)'s hallucination detector for
 LLM output. It adapts the [`halu`](https://pypi.org/project/halu/) Python SDK to
 LangChain so you can annotate, guard, monitor, or retry generations from inside
 an LCEL pipeline.
